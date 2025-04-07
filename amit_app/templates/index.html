@@ -1,0 +1,237 @@
+{% extends "header.html" %}
+{% load static %}
+{% block content %}
+<!-- <head>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head> -->
+<style>
+  body{
+    background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("{% static 'images/HOM.jpg' %}");
+            width: 100%;
+            height: 100%;
+            /* height:80vh; */
+            background-size: cover;
+            background-position: center;
+          background-attachment: fixed;
+  }
+  
+   .banner{
+            font-weight: 900;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;  
+            /* align-items: center;   */
+            height: 60vh; 
+            box-sizing: border-box;
+            padding: 50px;           
+            /* text-align:start; */
+               
+        } 
+        p{
+            line-height: 200%;
+            word-spacing: 7px;
+            
+            font-size: 2.5vh;
+            text-align: justify;
+        }
+        
+        
+        .aboutpara{
+            text-indent: 60px;
+        }
+        @keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span.p1 {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span.p1:nth-child(1) {
+  animation: fade-in 0.8s 2.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p1:nth-child(2) {
+  animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p1:nth-child(3) {
+  animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p1:nth-child(4) {
+  animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p1:nth-child(5) {
+  animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p1:nth-child(6) {
+  animation: fade-in 0.8s 3.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p1:nth-child(7) {
+  animation: fade-in 0.8s 3.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span.p1:nth-child(8) {
+  animation: fade-in 0.8s 3.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span.p1:nth-child(9) {
+  animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+/* span:nth-child(10) {
+  animation: fade-in 0.8s 3.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+} */
+span.p {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span.p:nth-child(1) {
+  animation: fade-in 0.8s 3.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p:nth-child(2) {
+  animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p:nth-child(3) {
+  animation: fade-in 0.8s 3.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p:nth-child(4) {
+  animation: fade-in 0.8s 4.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p:nth-child(5) {
+  animation: fade-in 0.8s 4.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.p:nth-child(6) {
+  animation: fade-in 0.8s 4.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+  
+</style>
+<div class="banner text-light ">
+ <div class="">  
+<span class="p1"><h2>Welcome To</h2><br>
+<span class="pr-3 p1"><h1 class="ti1" style="font-weight: 900;letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;"> ATHITH </h1></span>
+<span  class="p1"><h1 class=" ti1 " style="font-weight: 900; letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;">MITHRA</h1></span><br>
+
+<span  class="p1"><h2 class="ti2 pr-2" style="font-weight: 900;letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;">Industrial </h2></span>
+<span  class="p1"><h2 class=" ti2 pr-2" style="font-weight: 900;letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;">Technologies</h2></span> 
+<span  class="p1"><h2 class=" ti2 pr-2" style="font-weight: 900;letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;"> Private</h2></span> 
+<span  class="p1"><h2 class=" ti2 pr-2" style="font-weight: 900;letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;"> Ltd.</h2></span><br>
+
+<i><span class="p   pr-2"><h3 class="ti3" style="font-weight: 900;letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;">Power</h3></span>
+<span class="p pr-2  "><h3 class="ti3" style="font-weight: 900;letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;"> Electronics</h3></span> 
+<span class="p pr-2  "><h3 class="ti3" style="font-weight: 900;letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;">That</h3></span>
+<span class="p pr-2 "><h3 class="ti3" style="font-weight: 900;text-shadow: 2px 2px 4px #000000;"> Power</h3></span>
+<span class="p pr-2  "><h3 class="ti3" style="font-weight: 900;letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;"> Our</h3> </span>
+<span class="p pr-2  "><h3 class="ti3" style="font-weight: 900;letter-spacing: 3px;text-shadow: 2px 2px 4px #000000;">Lives.</h3></span></i>
+</div> 
+</div>
+<br><br>
+<div class="container-fluid bg-light">
+  <br><br>
+    <div class="container ">
+        <h4 style="font-size: 30px;font-weight: 700;" class="text-center">ABOUT AMIT</h4><br>
+        <h4 style="color: darkblue;font-size: 30px;"><b>We Provide Top Industrial Services</b></h4><br>
+        <p class="aboutpara">Athith Mithra Industrial Technologies (AMIT) Private Limited manufactures a wide range of electronics components such as Resistor, Inductor, Capacitor, Diodes, electronic switches, Electronic Cables (RMC Cable), Driver Circuit, Small rating Transformer, Micro Controller (Arduino, PIC, DSPIC, Raspberry), Digital Signal Processor (DSP), Field Programmable Gate Array Controller (FPGA) and Artificial Intelligence based Robotics applications.</p>
+        <p class="aboutpara">AMIT focuses specifically on Renewable energy sector and manufactures DC-DC Converter for Solar and Battery system, Single phase and three phase Industrial Drives, FACTS devices, Solar based UPS system and Wind Energy Generators.</p>
+        <p class="aboutpara">AMIT shares the real time Industrial knowledge by conducting In-Plant Training and Internship to the students across various disciplines.</p>
+    </div>
+    <br><br>
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            <h4 style="color: darkblue;font-size: 30px;"><b>Our Mission and Vision</b></h4><br> 
+            <p><span style="color: darkblue;font-weight: 700;">Vision:</span> AMIT strives to transform the world, bringing it closer to sustainable life by making clean energy affordable.</p><br>
+            <p><span style="color: darkblue;font-weight: 700;">Mission: </span> AMIT seeks to give quality and cost effective renewable systems that guide People towards sustainable living.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 side1">
+            <center>
+            <div class="inside" data-aos="fade-down" data-aos-duration="700" data-aos-easing="linear"  >
+              
+            </div>
+            <img class="inside2" data-aos="fade-up" data-aos-duration="700" data-aos-easing="linear" src="{% static 'images/HOM4.jpg' %}" alt="" >
+            
+        </center>
+        </div>
+    </div>
+  </div>
+    <br><br><br><br>
+    <div class="container">
+    <div>
+        <h4 style="font-size: 30px;font-weight: 700;" class="text-center">OUR SERVICES</h4><br>
+        <h4 style="color: darkblue;font-size: 30px;" class="text-center"><b>Leading Innovation in Solar Inverters, Power Supplies, IoT Systems & Automation</b></h4><br><br> 
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6 side1">
+            <center>
+            <div class="inside" data-aos="fade-down" data-aos-duration="700" data-aos-easing="linear">
+               
+            </div>
+            <img class="inside2" data-aos="fade-up" data-aos-duration="700" data-aos-easing="linear" src="{% static 'images/HOM3.jpg' %}" alt="" >
+        </center>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <br>
+            <p>At AMIT, we are pioneers in the field of advanced energy solutions and electronics. With a rich portfolio that spans Solar Inverters, regulated power supplies, cutting-edge electronic components, and next-generation IoT systems, we serve industries and homes alike with reliable and innovative technology. Our commitment to quality and efficiency drives us to deliver state-of-the-art solutions for the modern world.</p>
+        </div>
+    </div>
+  </div>
+    <br><br><br><br>
+    <div class="container">
+    <div>
+        <h4 style="color: darkblue;font-size: 30px;"><b>Powering the Future of Technology</b></h4><br> 
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            <br>
+            <p>With a focus on innovation, quality, and sustainability, AMIT stands at the forefront of the electronics and energy solutions industry. Whether you’re looking to harness the power of solar energy, optimize your industrial processes, or integrate cutting-edge IoT technology, we provide the products and expertise you need to succeed.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 side1">
+            <center>
+            <div class="inside" data-aos="fade-down" data-aos-duration="700" data-aos-easing="linear">
+                
+            </div>
+            <img class="inside2" src="{% static 'images/HOM5.jpg' %}" data-aos="fade-up" data-aos-duration="700" data-aos-easing="linear" alt="">
+        </center>
+        </div>
+
+    </div>
+  </div>
+    <br><br><br><br>
+    <div class="container">
+    <div>
+        <h4 style="color: darkblue;font-size: 30px;"><b>AMIT: Director Profile</b></h4><br>
+        <p class="aboutpara">Mr. K.S.Kavin, is one of the Directors of Athith Mithra Industrial Technologies (AMIT) Pvt Ltd. He has about three years of teaching experience as Assistant Professor and about 12 years of industrial experience as R&D Engineer in the field of Power Electronics. He is currently pursuing his PhD in Grid tied Electric Vehicle without energy storage system. He is the founder of AMIT Pvt Ltd Company and is actively engaged with it. He is responsible for the overall working of the Company and is instrumental in making strategic decisions for the Company. Besides this, Mr.K.S.KAVIN is an academically strong individual and actively publishes research papers. He currently has more than 25 research papers published in various renowned journals in various Engineering disciplines. He can be reached at kavinksk@gmail.com.</p><br>
+        <p class="aboutpara">Ms. A.T.R.Krishna Priya, one of the Directors of Athith Mithra Industrial
+            Technologies (AMIT) Pvt Ltd., has completed her Master in Engineering (M.E) in Computer
+            Science and Engineering from Anna University. She is specialized in Machine Learning and
+            Deep Learning applications in the field of medical image processing. She has published
+            various papers in journals and conferences. She is involved in the administration of the
+            organization and is highly committed to AMIT’s growth and development. She can be
+            reached at krishnapriya0691@gmail.com.</p> 
+    </div>
+
+</div>
+<br><br>
+</div>
+
+{% include 'footer.html' %} 
+
+{% endblock %}

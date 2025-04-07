@@ -1,0 +1,364 @@
+{% extends "header.html" %}
+{% load static %}
+{% block content %}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+    body{
+        background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("{% static 'images/HOM2.jpg' %}");
+            width: 100%;
+            height: 100%;
+            /* height:80vh; */
+            background-size: cover;
+            background-position: center;
+          background-attachment: fixed;
+    }
+    .train-banner{
+    font-weight: 900;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;  
+    align-items: center;  
+    height: 60vh;        
+    }
+    p{
+        line-height: 200%;
+        word-spacing: 7px;
+        
+        font-size: 2.5vh;
+        text-align: justify;
+    }
+    .aboutpara{
+        text-indent: 60px;
+    }
+    .reqbox{
+        width: 100%;
+        height: 400px;
+        background-color: #2e59f1;
+        border-radius:30px ;
+        
+    }
+    .bgchange:hover{
+        background-color:#2e59f1 ;
+        color: white;
+        padding: 30px;
+        border-radius: 6px;
+    }
+
+</style>
+<div class="train-banner text-light">
+    <div class="text-center">  
+   
+   <h1 style="font-size: 4.5vw;font-weight: 900;" data-aos="zoom-in" data-aos-duration="3000">ATHITH MITHRA</h1>
+   <h3 style="font-size: 2vw;font-weight: 800;" data-aos="zoom-in" data-aos-duration="3000">Industrial Technologies Private Ltd.</h3><br>
+   <!-- <h3 style="font-size: 2vw;font-weight: 800;">Training and Courses</h3> -->
+   </div> 
+</div>
+<br><br>
+<div class="container-fluid bg-light">
+    <br><br>
+<div class="container">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">Training and Courses</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">  Though AMIT concentrates on mainly on Product Development, we also take pride in contributing to the society by training the young minds through Internships, Training and Value Added Courses. The training mainly focuses on enriching the Students with Practical Knowledge apart from theory studied through books. The Training process aims to improve the Skill Set of the trainees.</p>
+    </div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">SOLAR INVERTER</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">  Solar Inverter is a device that converts direct current (DC) electricity, which is what a solar panel generates, to alternating current (AC) electricity, which the electrical grid uses. AMIT provides hands on training on building a Solar Inverter from basics that enable the student to make his own Solar Inverter.</p>
+    </div>
+</div>
+    <br><br>
+<div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">VLSI SYSTEM</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">  VLSI (Very Large-Scale Integration) design is a process of designing integrated circuits (ICs) by integrating thousands, millions or even billions of transistors on a single chip. These ICs are used in a variety of electronic devices ranging from simple hand-held devices to complex supercomputers.</p>
+    </div>
+</div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">PCB DESIGNING</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">  Printed circuit board (PCB) design brings your electronic circuits to life in the physical form. Using PCB layout software, the PCB board design process combines component placement and routing to define electrical connectivity on a manufactured circuit board.</p>
+    </div>
+</div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">INTERNET OF THINGS (IoT)</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">  Printed circuit board (PCB) design brings your electronic circuits to life in the physical form. Using PCB layout software, the PCB board design process combines component placement and routing to define electrical connectivity on a manufactured circuit board.</p>
+    </div>
+</div>
+    <br><br>
+<div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">EMBEDDED SYSTEM AND APPLICATIONS</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">  An embedded system is a micro controller or microprocessor based system which is designed to perform a specific task. It can be an independent system or it can be a part of a large system. For example, a fire alarm is an embedded system; it will sense only smoke.</p>
+    </div>
+</div>
+    <br><br>
+<div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">a) ARDUINO</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">  Arduino is an open-source platform used for building electronics projects. Arduino consists of both a physical programmable circuit board (often referred to as a microcontroller) and a piece of software, or IDE (Integrated Development Environment) that runs on your computer, used to write and upload computer code to the physical board.</p>
+    </div>
+</div>
+    <br><br>
+<div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">b) RASPBERRY PI</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">  While the Raspberry Pi is a single-board computer.  Raspberry Pi is used to learn programming, develop hardware projects, home automation, implement Kubernetes clusters and Edge computing, and in industrial applications.</p>
+    </div>
+</div>
+    <br><br>
+<div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">c) CADD</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">  Computer-aided design and drafting (CADD) programs are interactive graphic programs that automate the methodologies of drafting and design layouts. CAD design is used by architects, construction managers, and engineers and has replaced manual drafting. It helps users create designs in either 2D or 3D to visualize construction, and enables the development, modification, and optimization of the design process.</p>
+    </div>
+</div>
+    <br><br>
+<div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">d) E CAD</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara"> ECAD stands for Electronic Computer-Aided Design. It is software for the design of electronic systems. It is used to design printed circuit boards (PCBs), integrated circuits (ICs), and other electronic components. It also includes specialized software that covers all areas of electrical and hydraulic engineering.</p>
+    </div>
+</div>
+    <br><br>
+<div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">e) POWER ELECTRONICS AND POWER SYSTEMS</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara"> Power Electronics and Power Systems focuses on efficient conversion, control, and management of electrical power. Power electronics deals with converting power from one form to another and plays a significant role in various industries. </p>
+    </div>
+</div>
+    <br><br>
+<div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">f) ANSYS</h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara"> ANSYS is a suite of engineering simulation software used for a wide range of applications, including structural analysis, fluid dynamics, electromagnetic simulation etc. Some of its applications include Antenna Design and Placement, Battery Simulation, Avionics and Flight Control, Electric Motors etc.</p>
+    </div>
+</div>
+    <br><br>
+    <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">PROGRAMMING LANGUAGES</h1><br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">a) C, C++ </h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara"> C programming course provides a comprehensive introduction to the ANSI C language, emphasizing portability and structured design. Students are introduced to all major language elements including fundamental data types, flow control, and standard function libraries. Comprehensive hands on exercises are performed throughout training each day to reinforce key concepts </p>
+    </div>
+</div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">b) PYTHON </h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">Python is commonly used for developing websites and software, task automation, data analysis, and data visualisation. Since it's relatively easy to learn, Python has been adopted by many non-programmers, such as accountants and scientists, for a variety of everyday tasks, like organising finances. </p>
+    </div>
+</div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">c) MATLAB </h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">MATLAB is a programming and numeric computing platform for engineering and scientific applications like data analysis, signal and image processing, control systems, wireless communications and robotics. </p>
+    </div>
+</div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">d) JAVA </h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">MATLAB is a programming and numeric computing platform for engineering and scientific applications like data analysis, signal and image processing, control systems, wireless communications and robotics. </p>
+    </div>
+</div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">PROGRAMMING APPLICATIONS </h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">The different programming languages such as Python, Matlab, Java are learnt in relation to their trending applications such as </p>
+    </div>
+</div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">a) WEB DEVELOPMENT  </h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">Web development is the process of building, programming, and maintaining websites and web applications. Website developers use various programming languages, like HTML, CSS, and JavaScript, to develop websites and web applications. </p>
+    </div>
+</div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">b) ARTIFICIAL INTELLIGENCE AND ROBOTICS </h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">Artificial intelligence (AI) is a set of technologies that enable computers to perform a variety of advanced functions, including the ability to see, understand and translate spoken and written language, analyse data, make recommendations, and more. Robotics is a branch of engineering and computer science that involves the conception, design, manufacture, and operation of robots.</p>
+    </div>
+</div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">c) DIGITAL IMAGE PROCESSING </h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">Digital image processing is the use of algorithms and mathematical models to process and analyse digital images. The goal of digital image processing is to enhance the quality of images, extract meaningful information from images, and automate image-based tasks.</p>
+    </div>
+</div>
+    <br><br>
+    <div class="bgchange">
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">d) GAME DEVELOPMENT </h1>
+    </div>
+    <br><br>
+    <div>
+        <p class="aboutpara">Game Development is the art of creating games and describes the design, development and release of a game. It may involve concept generation, design, build, test and release.</p>
+    </div>
+</div>
+    <br><br>
+
+
+
+
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">Our Working Process</h1><br><br>
+        
+    <div class="row ">
+        
+        <div class="col-md-4 col-sm-4">
+            <center>
+            <div  style="width: 200px;height: 200px;background-color: #d8e0ff;" class="rounded-circle position-relative">
+                <div style="width: 170px;height: 170px;background-color: #708fff;" class="rounded-circle position-absolute top-50 start-50 translate-middle">
+                    <div style="width: 140px;height: 140px;background-color: #0745e5;" class="rounded-circle position-absolute top-50 start-50 translate-middle">
+                        <div class="rounded-circle position-absolute top-50 start-50 translate-middle"> <h1 class="text-light" style="font-size: 50px;">1</h1> </div>
+                    </div>
+                </div>
+            </div><br>
+            <div>
+                <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">Select a Project</h1><br> 
+                <p class="pr-4 pl-4">We have the technology and  industry expertise to develop  solutions that can connect  people and businesses  across variety of mobile  devices</p>
+            </div></center>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <center>
+            <div  style="width: 200px;height: 200px;background-color: #d8e0ff;" class="rounded-circle position-relative">
+                <div style="width: 170px;height: 170px;background-color: #708fff;" class="rounded-circle position-absolute top-50 start-50 translate-middle">
+                    <div style="width: 140px;height: 140px;background-color: #0745e5;" class="rounded-circle position-absolute top-50 start-50 translate-middle">
+                        <div class="rounded-circle position-absolute top-50 start-50 translate-middle"> <h1 class="text-light" style="font-size: 50px;">2</h1> </div>
+                    </div>
+                </div>
+            </div><br>
+            <div>
+                <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">Project Analysis</h1><br> 
+                <p class="pr-4 pl-4">We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices</p>
+            </div>
+        </center>
+        </div>
+        <div class="col-md-4 col-sm-4"> 
+            <center>
+            <div  style="width: 200px;height: 200px;background-color: #d8e0ff;" class="rounded-circle position-relative">
+                <div style="width: 170px;height: 170px;background-color: #708fff;" class="rounded-circle position-absolute top-50 start-50 translate-middle">
+                    <div style="width: 140px;height: 140px;background-color: #0745e5;" class="rounded-circle position-absolute top-50 start-50 translate-middle">
+                        <div class="rounded-circle position-absolute top-50 start-50 translate-middle"> <h1 class="text-light" style="font-size: 50px;">3</h1> </div>
+                    </div>
+                </div>
+            </div><br>
+            <div>
+                <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">Deliver Result</h1><br>
+                <p class="pr-4 pl-4">We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices</p> 
+            </div><br>
+        </center>
+            </div> 
+        </div>
+        </div><br><br>
+        <div class="reqbox  position-relative " >
+            <div class="row position-absolute   top-50 start-50 translate-middle " style="width: 80%;">
+                <div class="col-md-4 text-light pr-4">
+                    <p >+91 9840511458</p>
+                    <p>To Make Requests For The 
+                        Further Informations</p>
+                        <button class="btn btn-light">Join with us</button>
+                </div>
+                <div class="col-md-8  d-flex justify-content-around align-items-center bg-light" style="border-radius:30px ;">
+                 
+                        <div class="text-center" >
+                            <h1>25</h1>
+                            <h5>Projects Completed</h5>
+                        </div>
+                        <div class="text-center ">
+                            <h1>50</h1>
+                            <h5>Happy Clients</h5>
+                        </div>
+                        <div class="text-center ">
+                            <h1>500</h1>
+                            <h5>Training Students</h5>
+                        </div>
+                        <div class="text-center">
+                            <h1>50</h1>
+                            <h5>Winning Awards</h5>
+                        </div>
+                    </div>
+                </div>
+             
+        </div>
+    </div>
+    <br><br>
+
+
+</div>
+
+
+{% include 'footer.html' %} 
+
+{% endblock %}

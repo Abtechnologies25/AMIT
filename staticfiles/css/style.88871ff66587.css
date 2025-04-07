@@ -1,0 +1,19 @@
+.ti1{
+    color: blue;
+}
+.ti2{}
+
+
+@media only screen and (max-width: 600px) {
+    .inside{
+      width: 200px;
+      height: 200px;
+    }
+  .inside2{
+      position: absolute;
+      top: 10%;
+      left: 30%;
+      width: 200px;
+      height: 200px;
+  }
+  }

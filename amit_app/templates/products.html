@@ -1,0 +1,209 @@
+{% extends "header.html" %}
+{% load static %}
+{% block content %}
+<style>
+  body{
+        background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("{% static 'images/HOM2.jpg' %}");
+            width: 100%;
+            height: 100%;
+            /* height:80vh; */
+            background-size: cover;
+            background-position: center;
+          background-attachment: fixed;
+    }
+    .prod-banner{
+   
+    font-weight: 900;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;  
+    align-items: center;  
+    height: 60vh;        
+    }
+    p{
+        line-height: 200%;
+        word-spacing: 7px;
+        
+        font-size: 2.5vh;
+        text-align: justify;
+    }
+    .aboutpara{
+        text-indent: 60px;
+    }
+    .card{
+  margin-top: 50px;
+  
+}
+</style>
+<div class="prod-banner text-light">
+    <div class="text-center">  
+   
+   <h1 style="font-size: 4.5vw;font-weight: 900;" data-aos="zoom-in" data-aos-duration="3000">ATHITH MITHRA</h1>
+   <h3 style="font-size: 2vw;font-weight: 800; " data-aos="zoom-in" data-aos-duration="3000">Industrial Technologies Private Ltd.</h3><br>
+   <!-- <h3 style="font-size: 2vw;font-weight: 800;">Products</h3> -->
+   </div> 
+</div>
+<br><br>
+<div class="container-fluid bg-light">
+  <br><br>
+  <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">Products</h1>
+<div class="container" style="display: flex;flex-wrap: wrap;justify-content:space-around;">
+            <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/DC POWER SUPPLY.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">DC Power supplies (5v, 12v, 15v, 24v, 36v, 48v)</h5>
+                </div>
+              </div>
+        
+       
+            <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/REGULATED POWER SUPPLY.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Regulated Power Supplies (RPS)
+                  </h5>
+                </div>
+              </div>
+      
+      
+            <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/DECADE BOXES.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Decade Boxes (Resistance, Inductance, Capacitance)</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/AC VOLTAGE REGULATOR.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">AC Voltage Regulator</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/SINGLE PHASE INVERTER.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Single Phase Inverter</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/THREE PHASE INVERTER.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Three Phase Inverter (SPWM/SVPWM Based)
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/AC VOLTAGE REGULATOR.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Solar On grid Inverter</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/ELECTRONIC COMPONENTS.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Electronic Components</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/ELECTRIC VEHICLE CHARGING SYSTEM.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Electric Vehicle Charging Station</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/SOLAR OFFGRID INVERTER.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Solar off grid Inverter</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/AC MOTOR DRIVES.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">AC Motor Drives</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/DC MOTOR DRIVE.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">DC Motor Drives
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/MICRO CONTROLLER.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Micro Controller</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/SMART GRID MONITORING SYSTEM.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Smart Grid monitoring system</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/FPGA CONTROLLER.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">FPGA controller</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/IOT BASED APPLICATIONS.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">IoT based Applications</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/SENSOR MODULES.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Sensor modules</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/MEDICAL IMAGE PROCESSING.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Medical Image Processing App</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/FUNDED RESEARCH PRODUCTS.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">Funded Research Projects</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/AI BASED ROBOTICS APP.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">AI based Robotics Applications</h5>
+                </div>
+              </div>
+
+              <div class="card " style="width: 18rem;">
+                <img class="card-img-top" style="height: 200px;" src="{% static 'images/PCB DESIGN AND FABRICATION.jpg' %}" alt="Card image cap">
+                <div class="card-body text-center">
+                  <h5 class="card-text">PCB Design and Fabrication</h5>
+                </div>
+              </div>    
+</div>
+<br><br>
+</div>
+
+
+{% include 'footer.html' %} 
+
+{% endblock %}

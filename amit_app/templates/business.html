@@ -1,0 +1,99 @@
+{% extends "header.html" %}
+{% load static %}
+{% block content %}
+<style>
+    body{
+        background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url("{% static 'images/HOM2.jpg' %}");
+            width: 100%;
+            height: 100%;
+            /* height:80vh; */
+            background-size: cover;
+            background-position: center;
+          background-attachment: fixed;
+    }
+        .bus-banner{
+        
+        font-weight: 900;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;  
+        align-items: center;  
+        height: 60vh;
+        box-sizing: border-box;
+        padding: 50px;      
+        }
+        p{
+            line-height: 200%;
+            word-spacing: 7px;
+            
+            font-size: 2.5vh;
+            text-align: justify;
+        }
+        .aboutpara{
+            text-indent: 60px;
+        }
+</style>
+
+<div class="bus-banner text-light">
+    <div class="text-center">  
+   
+   <h1 style="font-size: 4.5vw;font-weight: 900;" data-aos="zoom-in" data-aos-duration="3000">ATHITH MITHRA</h1>
+   <h3 style="font-size: 2vw;font-weight: 800;"data-aos="zoom-in" data-aos-duration="3000">Industrial Technologies Private Ltd.</h3><br>
+   <!-- <h3 style="font-size: 2vw;font-weight: 800;">Business</h3> -->
+   </div> 
+</div>
+<br><br>
+<div class="container-fluid bg-light">
+<div class="container">
+    <br><br>
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;" >Business</h1>
+    </div>
+    <div class="bg-dark" >
+        <!-- <img src="{% static 'images/busi.jpg' %}" style="width: 100%;height: 500px;object-fit: cover;" alt=""> -->
+    </div><br><br>
+    <div>
+        <p class="aboutpara">AMIT is the leading manufacturer and distributor of Solar Inverter both On grid and Off grid, DC and AC regulated power supplies, Electronic Components (Inductor, Capacitor, Resistor, Rheostat, Transformer, Diodes, MOSFET, IGBT), Wireless Embedded IoT system, Sensors, Monitoring and control of Smart grid, Microgrid, Industrial motor drives, Home and Industrial Automation.</p>
+        <p class="aboutpara"> AMIT is also involved in bringing into reality the concepts such as Artificial Intelligence in Deep Learning, Machine Learning, MPPT algorithms for Solar Power tracking applications, Inverter Control System, Electric Motor Control System and rapidly growing Robotics applications.</p>
+        <p class="aboutpara">AMIT supplies Digital Controllers (Microcontroller, Digital Signal Processor and FPGA controller) that support the implementation of AI applications.</p>
+        <p class="aboutpara">We combine our multiple IoT products by matching Embedded and Power electronics technologies meeting the demands of our valuable customers. We aim at selling high quality products with all round services based on technical expertise and experience.</p>
+    </div>
+    <br><br>
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">Artificial Intelligence & Deep Learning</h1>
+    </div><br><br>
+    <div class="" >
+        <img src="{% static 'images/ai2.jpg' %}" style="width: 100%;height: 500px;object-fit: cover;border-radius: 8px;" alt="" >
+    </div><br><br>
+    <div>
+        <p class="aboutpara">AMIT is also involved in bringing into reality the concepts such as Artificial Intelligence  in  Deep Learning,  Machine Learning, MPPT  algorithms  for  Solar Power tracking applications, Inverter Control System, Electric Motor Control System and rapidly growing Robotics applications.</p>
+    </div>
+    <br><br>
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">Digital Controllers</h1><br><br>
+    </div>
+    <div class="" >
+        <img src="{% static 'images/digi.jpg' %}" style="width: 100%;height: 500px;object-fit: cover;border-radius: 8px;" alt="" class="img-fluid">
+    </div><br><br>
+    <div>
+        <p class="aboutpara">AMIT supplies Digital Controllers (Microcontroller, Digital Signal Processorand FPGA controller) that support the implementation of AI applications.</p>
+    </div>
+    <br><br>
+    <div>
+        <h1 class="text-center" style="font-size: 30px;font-weight: 700;color: darkblue;">IoT, Embedded Products</h1><br><br>
+    </div>
+    <div class="">
+        <img src="{% static 'images/iot.jpg' %}" style="width: 100%;height: 500px;object-fit: cover;border-radius: 8px;" alt="">
+    </div><br><br>
+    <div>
+        <p class="aboutpara">We combine our multiple IoT products by matching Embedded and Power electronics technologies meeting the demands of our valuable customers. We aim at selling high quality products with all round services based on technical expertise and experience.</p>
+    </div>
+
+</div>
+<br><br>
+</div>
+
+
+{% include 'footer.html' %}
+
+{% endblock %}
