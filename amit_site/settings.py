@@ -84,7 +84,7 @@ DATABASES = {
     }
 }
 
-# DATABASES["default"] = dj_database_url.parse(config("DATABASE_URL"))
+DATABASES["default"] = dj_database_url.parse(config("DATABASE_URL"))
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -124,6 +124,9 @@ STATIC_URL = '/static/'
 
 # Directory where 'collectstatic' will gather static files
 STATIC_ROOT = BASE_DIR / "staticfiles"
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Directory to store additional static files
 STATICFILES_DIRS = [

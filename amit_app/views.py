@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect,HttpResponse
 from django.core.mail import send_mail
 from django.conf import settings
+from .models import GalleryCategory
 # Create your views here.
 
 def home_page(request):
@@ -20,6 +21,10 @@ def training_page(request):
 
 def contact_page(request):
     return render(request, 'contactus.html')
+
+def gallery_view(request):
+    categories = GalleryCategory.objects.prefetch_related('images').all()
+    return render(request, 'gallery.html', {'categories': categories})
 
 
 def send_mail_page(request):
