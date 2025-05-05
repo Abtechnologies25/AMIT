@@ -64,7 +64,9 @@
                 {% for image in category.images.all %}
                     <div class="image-item">
                         <img src="{{ image.image.url }}" alt="{{ image.name }}">
-                        <p>{{ image.name }}</p>
+                        {% if image.name %}
+                            <p>{{ image.name }}</p>
+                        {% endif %}
                     </div>
                 {% empty %}
                     <p class="text-center">No images available under {{ category.name }}.</p>
