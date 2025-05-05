@@ -9,8 +9,8 @@ class GalleryCategory(models.Model):
 class GalleryImage(models.Model):
     category = models.ForeignKey(GalleryCategory, on_delete=models.CASCADE, related_name='images')
     image = models.ImageField(upload_to='gallery_images/')
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, blank=True)  # <-- Add blank=True
 
     def __str__(self):
-        return self.name
+        return self.name if self.name else "Unnamed Image"
 
