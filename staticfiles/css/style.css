@@ -1,5 +1,5 @@
 .ti1{
-  font-size: 50px;
+  font-size: 55px;
 }
 .ti2{
 font-size: 30px;
@@ -11,6 +11,7 @@ font-size: 30px;
 
 .side1{
   position: relative;
+  
 }
 .inside2{
   position: absolute;
@@ -18,12 +19,15 @@ font-size: 30px;
   left: 30%;
   width: 300px;
   height: 300px;
-  background: grey;
+  border: 3px solid #0745E5;
+  border-radius: 6px;
+  object-fit: cover;
 }
 .inside{
 width: 300px;
 height: 300px;
-background: rgb(12, 12, 252);
+background: #0745E5;
+border-radius: 6px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -50,7 +54,7 @@ background: rgb(12, 12, 252);
     font-size: 30px;
     
   }
-  .textarea{
+  #message{
     width: 300px;
   }
   }

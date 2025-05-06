@@ -1,0 +1,60 @@
+.ti1{
+  font-size: 55px;
+}
+.ti2{
+font-size: 30px;
+}
+
+.ti3{
+font-size: 30px;
+}
+
+.side1{
+  position: relative;
+  
+}
+.inside2{
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #0745E5;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.inside{
+width: 300px;
+height: 300px;
+background: #0745E5;
+border-radius: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+    .inside{
+      width: 200px;
+      height: 200px;
+    }
+  .inside2{
+      position: absolute;
+      top: 10%;
+      left: 30%;
+      width: 200px;
+      height: 200px;
+  }
+  .ti1{
+    font-size: 30px;
+    
+  }
+  .ti2{
+    font-size: 30px;
+    
+  }
+  .ti3{
+    font-size: 30px;
+    
+  }
+  #message{
+    width: 300px;
+  }
+  }
