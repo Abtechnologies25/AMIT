@@ -62,7 +62,7 @@
             <div class="container">
             <div class="d-flex justify-content-around align-items-center flex-wrap ">
                 {% for image in category.images.all %}
-                    <div class="image-item">
+                    <div class="image-item mt-5">
                         <img src="{{ image.image.url }}" alt="{{ image.name }}">
                         {% if image.name %}
                             <p>{{ image.name }}</p>
